@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    justify-content: left;
+    background-color:black;
+    color: cornflowerblue;
+    height: 5vh;
+}
+.page{
+    margin: 10px;
+}
