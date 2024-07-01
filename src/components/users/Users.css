@@ -1,0 +1,16 @@
+.userandpost{
+    display: flex;
+}
+.users{
+    width: 50%;
+}
+.posts{
+    width: 50%;
+}
+.user{
+    border: 2px solid cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
