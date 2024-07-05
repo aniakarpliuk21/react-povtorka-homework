@@ -1,15 +1,17 @@
-import React, {FC} from 'react';
+import React, {Component} from 'react';
 import {IPostModel} from "../../models/IPostModel";
-interface IProps{
+interface IProps {
     post:IPostModel
 }
-const PostComponent:FC<IProps> = ({post}) => {
-    return (
-        <div>
-            {post.id}.{post.title}:
-            {post.body}
-        </div>
-    );
-};
+class PostComponent extends Component<IProps> {
+    render() {
+        return (
+            <div>
+                {this.props.post.id}.{this.props.post.title}:
+                {this.props.post.body}
+            </div>
+        );
+    }
+}
 
 export default PostComponent;
