@@ -1,7 +1,6 @@
-export interface IUserModel {
-    id: number,
-    age:number,
-    email:string,
+export interface IUserModel{
+    id:number,
+    name:string,
     username:string,
-    image:string,
+    email:string
 }

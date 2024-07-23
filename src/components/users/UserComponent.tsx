@@ -1,16 +1,15 @@
 import React, {FC} from 'react';
 import {IUserModel} from "../../models/IUserModel";
-type IProps = {user:IUserModel} & {lift:(userId:number) => void}
-const UserComponent:FC<IProps> = ({user,lift}) => {
-    const onClickHandler = () => {
-        lift(user.id)
-    }
+import './Users.css'
+interface IProps {
+    user:IUserModel
+}
+const UserComponent:FC<IProps> = ({user}) => {
     return (
         <div className={'user'}>
-            {user.id}.{user.username}
-            Email-{user.email}
-            Age-{user.age}
-            <button onClick={onClickHandler}>User post</button>
+            <span>{user.id}.{user.username}</span>
+            <p>Email-{user.email}</p>
+            <p>Username-{user.username}</p>
         </div>
     );
 };

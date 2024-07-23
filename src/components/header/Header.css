@@ -5,3 +5,15 @@
     color: cornflowerblue;
     height: 5vh;
 }
+.header>a{
+    color:white;
+    text-decoration: none;
+    margin: 10px;
+}
+.header>a:hover{
+    text-decoration:none;
+    color: deepskyblue;
+}
+.header>a[class='active']{
+    color:indianred;
+}
