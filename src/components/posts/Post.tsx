@@ -1,17 +1,16 @@
 import React, {FC} from 'react';
 import {IPostModel} from "../../models/IPostModel";
 import './Posts.css'
-import {NavLink} from "react-router-dom";
 interface IProps {
     post:IPostModel
 }
-const PostComponent:FC<IProps> = ({post}) => {
+const Post:FC<IProps> = ({post}) => {
     return (
         <div className={'post'}>
             <p>{post.id}.{post.title}</p>
-            <NavLink to={post.id.toString()} state={{post}}>Details</NavLink>
+            <p>{post.title}</p>
         </div>
     );
 };
 
-export default PostComponent;
+export default Post;
